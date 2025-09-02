@@ -6,74 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <style>
+    /* General */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       line-height: 1.6;
-      background: #8be641;
-      color: #333;
+      background: #1e1e1e; /* dark background */
+      color: #ddd; /* light text */
     }
+
     header {
-      background: #333;
+      background: #111;
       color: #fff;
       padding: 1rem 2rem;
       text-align: center;
     }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
+
+    header p {
+      color: #aaa;
+      margin-top: 0.3rem;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
     .container {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
     section {
       margin-bottom: 3rem;
     }
-    h1, h2 {
-      margin-bottom: 1rem;
-    }
+
     /* About section */
     .about {
       display: flex;
       align-items: center;
       gap: 2rem;
       flex-wrap: wrap;
-    }
-    .about img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    /* Projects */
-    .project {
-      background: #fff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      background: #333;
-      color: #fff;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-
-     .about {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap; /* responsive on small screens */
       margin-top: 1rem;
     }
 
@@ -82,7 +56,8 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      border: 2px solid #444;
     }
 
     .about-text p {
@@ -94,19 +69,43 @@
     /* Social icons */
     .social-icons a {
       text-decoration: none;
-      color: #333; /* default color */
+      color: #ddd;
       margin-right: 1rem;
       font-size: 1.8rem;
       transition: color 0.3s;
     }
 
-    .social-icons a:hover {
-      color: #0077b5; /* LinkedIn blue for hover */
+    .social-icons a:hover { opacity: 0.8; }
+    .social-icons a:nth-child(1):hover { color: #000; } /* GitHub black on hover */
+    .social-icons a:nth-child(2):hover { color: #0077b5; } /* LinkedIn blue */
+    .social-icons a:nth-child(3):hover { color: #d44638; } /* Gmail red */
+
+    /* Projects */
+    .project {
+      background: #2c2c2c; /* darker gray */
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
 
-    .social-icons a:nth-child(1):hover { color: #000; } /* GitHub black on hover */
-    .social-icons a:nth-child(2):hover { color: #0077b5; } /* LinkedIn blue on hover */
-    .social-icons a:nth-child(3):hover { color: #d44638; } /* Gmail red on hover */
+    .project a {
+      color: #1db954; /* green links */
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #111;
+      color: #aaa;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -114,51 +113,50 @@
   <h1>Alin Emanuel Vlasceanu</h1>
   <p>Junior Python Developer</p>
 </header>
-  <div class="container">
-    <section id="about">
+<div class="container">
+  <section id="about">
     <h2>About Me</h2>
     <div class="about">
-        <img src="124936484.jpg" alt="My Photo">
-        <div class="about-text">
+      <img src="124936484.jpg" alt="My Photo">
+      <div class="about-text">
         <p>
-            Hello! I'm Alin, a junior Python developer<br>
-            seeking new challenges and experiences.
+          Hello! I'm Alin, a junior Python developer<br>
+          seeking new challenges and experiences.
         </p>
         <div class="social-icons">
-            <a href="https://github.com/AlinCqe" target="_blank">
+          <a href="https://github.com/AlinCqe" target="_blank">
             <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alin-emanuel-vlasceanu-a60a152b3/" target="_blank">
+          </a>
+          <a href="https://www.linkedin.com/in/alin-emanuel-vlasceanu-a60a152b3/" target="_blank">
             <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:alinemanuelv@gmail.com" target="_blank">
+          </a>
+          <a href="mailto:alinemanuelv@gmail.com" target="_blank">
             <i class="fas fa-envelope"></i>
-            </a>
+          </a>
         </div>
-        </div>
+      </div>
     </div>
+  </section>
 
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>eMAG Scraper</h3>
+      <p>Python scraper for eMAG.ro products with MongoDB storage. <a href="https://github.com/AlinCqe/eMAG-scraper">View project</a></p>
+    </div>
+    <div class="project">
+      <h3>Car Project</h3>
+      <p>Python practice project using objects, SQLite, and FastAPI. <a href="https://github.com/AlinCqe/car-project">View project</a></p>
+    </div>
+    <div class="project">
+      <h3>Note Nest</h3>
+      <p>Web page where anyone can find music sheets. In active development. <a href="https://github.com/AlinCqe/Note-Nest">View project</a></p>
+    </div>
+  </section>
+</div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>eMAG Scraper</h3>
-        <p>Python scraper for eMAG.ro products with MongoDB storage. <a href="https://github.com/AlinCqe/eMAG-scraper">View project</a></p>
-      </div>
-      <div class="project">
-        <h3>Car project</h3>
-        <p>Python practice project using objects, SQLite, and FastAPI. <a href="https://github.com/AlinCqe/car-project">View project</a></p>
-      </div>
-      <div class="project">
-        <h3>Note Nest</h3>
-        <p>Web page where anyone can find music sheets. <a href="https://github.com/AlinCqe/Note-Nest">View project</a></p>
-      </div>
-    </section>
-
-  </div>
-
-  <footer>
-    <p>&copy; 2025 My Portfolio</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Alin Emanuel Vlasceanu</p>
+</footer>
 </body>
 </html>
