@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Alin Emanuel Vlasceanu | Python Backend Developer</title>
+
+  <meta name="description" content="Portfolio of Alin Emanuel Vlasceanu, Python Backend Developer focused on backend automation, web scraping, APIs, distributed workers, and data systems." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header">
+    <a href="#" class="brand">
+      <span class="brand-mark">A</span>
+      <span>Alin.dev</span>
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <p class="pill">Python Backend Developer · Automation Systems</p>
+
+        <h1>
+          I build backend automation systems that turn repetitive business work into reliable software.
+        </h1>
+
+        <p class="hero-text">
+          I’m Alin Emanuel Vlasceanu, a self-taught Python developer focused on APIs,
+          web scraping, distributed workers, data pipelines, and production-ready automation.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button primary">View Projects</a>
+          <a href="./Alin_Emanuel_Vlasceanu_CV_Professional.pdf" download class="button secondary">Download CV</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>6+ months</strong>
+            <span>production automation uptime</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>major backend projects</span>
+          </div>
+          <div>
+            <strong>Python</strong>
+            <span>main development stack</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="terminal">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>$ python worker.py
+
+Loading queued jobs...
+Connecting to Google Sheets API...
+Safe lock acquired
+Scraping product images...
+Sending data to Base API...
+Job completed successfully
+
+status: production-ready</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Backend-focused, business-minded, and practical.</h2>
+      </div>
+
+      <p>
+        My strongest projects are not just tutorials. They solve real workflow problems:
+        marketplace image synchronization, competitor price tracking, lead generation,
+        website analysis, and automated outreach. I like building systems that run in the
+        background, recover from failures, and reduce manual work.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects that show real engineering decisions.</h2>
+      </div>
+
+      <div class="project-showcase">
+
+        <article class="project-large reveal">
+          <div class="project-meta">
+            <span class="project-number">01</span>
+            <span class="project-type">Production Automation</span>
+          </div>
+
+          <h3>eMAG Product Image Synchronization System</h3>
+
+          <p>
+            A production automation platform that synchronizes product images from eMAG
+            after new products are created in Base.
+          </p>
+
+          <div class="architecture">
+            <div>Base Automation</div>
+            <span>→</span>
+            <div>Google Sheets API Queue</div>
+            <span>→</span>
+            <div>Docker Worker</div>
+            <span>→</span>
+            <div>eMAG Scraper</div>
+            <span>→</span>
+            <div>Base API Update</div>
+          </div>
+
+          <ul class="clean-list">
+            <li>Uses Google Sheets API as the central job database.</li>
+            <li>Docker workers process queued synchronization tasks.</li>
+            <li>Residential proxy infrastructure used for marketplace scraping.</li>
+            <li>Safe-lock mechanism prevents duplicate processing.</li>
+            <li>Retry and recovery logic handles failed jobs.</li>
+            <li>Running continuously in production for 6+ months.</li>
+          </ul>
+
+          <div class="tech-row">
+            <span>Python</span>
+            <span>Docker</span>
+            <span>Google Sheets API</span>
+            <span>REST APIs</span>
+            <span>Web Scraping</span>
+          </div>
+        </article>
+
+        <div class="project-grid">
+
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <span class="project-type">Data Platform</span>
+            </div>
+            <h3>eMAG Market Intelligence Platform</h3>
+            <p>
+              Scrapes marketplace data, tracks historical prices in MongoDB,
+              and generates AI-powered pricing summaries using Ollama.
+            </p>
+            <ul class="clean-list">
+              <li>Automated eMAG product discovery.</li>
+              <li>HTML scraping plus hidden API extraction.</li>
+              <li>Historical price monitoring.</li>
+              <li>AI-based summaries for market insights.</li>
+            </ul>
+            <div class="tech-row">
+              <span>Python</span><span>MongoDB</span><span>Docker</span><span>Ollama</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-number">03</span>
+              <span class="project-type">Business Automation</span>
+            </div>
+            <h3>B2B Lead Generation & Outreach Platform</h3>
+            <p>
+              End-to-end system for discovering businesses, enriching data,
+              generating personalized emails, and scheduling outreach.
+            </p>
+            <ul class="clean-list">
+              <li>Overpass API business discovery.</li>
+              <li>Website analysis and lead enrichment.</li>
+              <li>Personalized email generation.</li>
+              <li>Automated execution with GitHub Actions.</li>
+            </ul>
+            <div class="tech-row">
+              <span>Python</span><span>Overpass API</span><span>Email APIs</span><span>GitHub Actions</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-number">04</span>
+              <span class="project-type">Backend System</span>
+            </div>
+            <h3>Backend Document Management System</h3>
+            <p>
+              Backend app with authentication, PDF uploads, image handling,
+              secure account management, PostgreSQL, and SQLAlchemy ORM.
+            </p>
+            <ul class="clean-list">
+              <li>User authentication.</li>
+              <li>PDF and image upload support.</li>
+              <li>Secure password/account handling.</li>
+              <li>PostgreSQL persistence layer.</li>
+            </ul>
+            <div class="tech-row">
+              <span>Python</span><span>PostgreSQL</span><span>SQLAlchemy</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I use to build reliable automation.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill reveal">
+          <h3>Backend</h3>
+          <p>Python, REST APIs, SQLAlchemy, API integrations, backend workflow design.</p>
+        </div>
+        <div class="skill reveal">
+          <h3>Data & Storage</h3>
+          <p>PostgreSQL, MongoDB, Google Sheets API, structured data pipelines.</p>
+        </div>
+        <div class="skill reveal">
+          <h3>Automation</h3>
+          <p>Web scraping, job queues, workers, scheduling, retry logic, safe locks.</p>
+        </div>
+        <div class="skill reveal">
+          <h3>Infrastructure</h3>
+          <p>Docker, Linux CLI, Git, GitHub Actions, residential proxy workflows.</p>
+        </div>
+        <div class="skill reveal">
+          <h3>AI Integration</h3>
+          <p>Ollama, local LLMs, prompt-based summaries and automated analysis.</p>
+        </div>
+        <div class="skill reveal">
+          <h3>Languages</h3>
+          <p>Romanian native, Spanish native, English intermediate/B2.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="section-heading reveal">
+        <p class="eyebrow">How I Think</p>
+        <h2>I care about systems that keep working.</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span>01</span>
+          <h3>Understand the workflow</h3>
+          <p>I start from the real business process and identify what can be automated safely.</p>
+        </div>
+        <div class="process-step reveal">
+          <span>02</span>
+          <h3>Design the pipeline</h3>
+          <p>I split the system into queues, workers, storage, API calls, and failure recovery.</p>
+        </div>
+        <div class="process-step reveal">
+          <span>03</span>
+          <h3>Make it reliable</h3>
+          <p>I add safe locks, retries, logging, and clear execution rules to avoid broken states.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Looking for junior Python backend or automation opportunities.</h2>
+      <p>
+        I’m interested in roles where I can build APIs, automation systems,
+        data pipelines, and backend tools that are useful in real business environments.
+      </p>
+
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:alinemanuelv@gmail.com">Email Me</a>
+        <a class="button secondary" href="https://github.com/AlinCqe" target="_blank" rel="noopener">GitHub</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/alin-emanuel-vlasceanu-a60a152b3/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Alin Emanuel Vlasceanu. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
